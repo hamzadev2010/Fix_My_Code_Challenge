@@ -3,15 +3,15 @@
 """
 import sys
 
-
 def fizzbuzz(n):
     """
-FizzBuzz function outputs a sequence of numbers from 1 to n, each separated by a space.
-If a number is divisible by three, print "Fizz" in its place.
-If the number is divisible by five, print "Buzz".
-If a number is divisible by both three and five, print "FizzBuzz".
+    FizzBuzz function prints numbers from 1 to n separated by a space.
+
+    - For multiples of three print "Fizz" instead of the number,
+      and for multiples of five print "Buzz".
+    - For numbers which are multiples of both three and five print "FizzBuzz".
     """
- if n < 1:
+    if n < 1:
         return
 
     tmp_result = []
@@ -25,7 +25,6 @@ If a number is divisible by both three and five, print "FizzBuzz".
         else:
             tmp_result.append(str(i))
     print(" ".join(tmp_result))
-
 
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
